@@ -1,0 +1,11 @@
+# This file contains the code that I have writting while following Brian Amedee's video to learn Manim: https://www.youtube.com/watch?v=KHGoFDB-raE&t=1019s
+
+#First example: 
+class Pith(Scene): #generating the animation, pith = video_name
+    def construct(self):
+    #code of the animation goes here
+        sq = Square(side_length=5, stroke_color=GREEN, fill_color=BLUE, fill_opacity=0.75)
+        self.play(Create(sq), run_time=3)
+        self.wait() #default 1 second
+
+# to generate the animation, execute on terminal: manim file_name.py Pith (video_name) -pqm
